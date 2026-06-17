@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* ===== MENÚ ===== */
+header{
+    background: #0b3d91;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #ffcc00;
+}
+
+/* ===== BANNER ===== */
+.hero{
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 18px;
+    max-width: 700px;
+}
+
+.hero button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ffcc00;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero button:hover{
+    background: white;
+}
+
+/* ===== SECCIONES ===== */
+section{
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0b3d91;
+}
+
+/* ===== CARDS SERVICIOS ===== */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/* ===== LISTAS ===== */
+ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li{
+    padding: 8px;
+    font-size: 18px;
+}
+
+/* ===== FORMULARIO ===== */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    padding: 12px;
+    background: #0b3d91;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    background: #062a66;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background: #0b3d91;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+header{
+    background: #0b3d91;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+html{
+    scroll-behavior: smooth;
+}
+button{
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #0b3d91, #1e88e5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #062a66, #0b3d91);
+}
+.card{
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+#nosotros{
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+body{
+    background: linear-gradient(180deg, #f4f6f9, #e9eef5);
+    color: #333;
+}
+.card, section{
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a{
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h2{
+        font-size: 28px;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}
+.banner-img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.section-img{
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+}
